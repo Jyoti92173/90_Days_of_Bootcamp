@@ -35,8 +35,8 @@ public class RemoveElement {
 
 
     public static void main(String[] args) {
-    int[] nums = {30,2,2,30,8};
-    int val =30 ;
+        int[] nums = {30,2,2,30,8};
+        int val =30 ;
         System.out.println(removeElement(nums,val));
         System.out.println(removeElement2(nums,val));
     }

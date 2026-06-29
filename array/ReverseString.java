@@ -37,6 +37,18 @@ public class ReverseString {
             right--;
         }
     }
+    public static void reverseStringUsingRecursion(char[] s) {
+        reverse(s, 0, s.length - 1);
+    }
+
+    private static void reverse(char[] s, int l, int r) {
+        if (l < r) {
+            reverse(s, l + 1, r - 1);
+            char temp = s[l];
+            s[l] = s[r];
+            s[r] = temp;
+        }
+    }
 
     public static void main(String[] args) {
 
@@ -47,5 +59,9 @@ public class ReverseString {
         char[] s2 = {'n','e','e','t'};
         reverseStringUsingTwoPointer(s2);
         System.out.println("Two Pointer: " + Arrays.toString(s2));
+
+        char[] s3 = {'n','e','e','t'};
+        reverseStringUsingRecursion(s3);
+        System.out.println("Recursion: " + Arrays.toString(s3));
     }
 }

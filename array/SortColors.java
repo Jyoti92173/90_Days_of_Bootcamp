@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SortColors {
     // Brute-Force approach........
-    
+
     public void sortColors(int[] nums) {
         if (nums == null || nums.length == 0) {
             return;
@@ -46,6 +46,10 @@ public class SortColors {
             index++;
             count2--;
         }
+    }
+
+    public void sortColor(int[] nums){
+        
     }
     public static void main(String[] args) {
         int[] nums= {1,0,1,2};

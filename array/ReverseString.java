@@ -3,10 +3,11 @@ package array;
 import java.util.Arrays;
 
 public class ReverseString {
-    // brute force approach....
-    public static void reverseString(char[] s){
-        int n = s.length;
 
+    // Brute Force
+    public static void reverseString(char[] s) {
+
+        int n = s.length;
         char[] temp = new char[n];
 
         int index = 0;
@@ -19,11 +20,32 @@ public class ReverseString {
             s[i] = temp[i];
         }
     }
+
+    // Two Pointer
+    public static void reverseStringUsingTwoPointer(char[] s) {
+
+        int left = 0;
+        int right = s.length - 1;
+
+        while (left < right) {
+
+            char temp = s[left];
+            s[left] = s[right];
+            s[right] = temp;
+
+            left++;
+            right--;
+        }
+    }
+
     public static void main(String[] args) {
-        char[] s = {'n', 'e', 'e', 't'};
 
-        reverseString(s);
+        char[] s1 = {'n','e','e','t'};
+        reverseString(s1);
+        System.out.println("Brute Force: " + Arrays.toString(s1));
 
-        System.out.println(Arrays.toString(s));
+        char[] s2 = {'n','e','e','t'};
+        reverseStringUsingTwoPointer(s2);
+        System.out.println("Two Pointer: " + Arrays.toString(s2));
     }
 }

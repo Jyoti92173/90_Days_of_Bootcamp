@@ -50,12 +50,35 @@ public class ValidPalindrome {
 
         return true;
     }
+    // Recursion Approach...........
+    public static boolean isPalindrome2(String s){
+        StringBuilder sb = new StringBuilder();
+
+        for (char ch : s.toCharArray()) {
+            if (Character.isLetterOrDigit(ch)) {
+                sb.append(Character.toLowerCase(ch));
+            }
+        }
+
+        return helper(sb.toString(), 0, sb.length() - 1);
+    }
+    private static boolean helper(String s, int left, int right) {
+
+        if (left >= right)
+            return true;
+
+        if (s.charAt(left) != s.charAt(right))
+            return false;
+
+        return helper(s, left + 1, right - 1);
+    }
 
     public static void main(String[] args) {
         String s = "Was it a car or a cat I saw?";
 
         System.out.println(ValidPalindrome.isPalindrome(s));
         System.out.println(ValidPalindrome.isPalindrome1(s));
+        System.out.println(ValidPalindrome.isPalindrome2(s));
 
     }
 

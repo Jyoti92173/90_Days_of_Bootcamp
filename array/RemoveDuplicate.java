@@ -17,11 +17,21 @@ public class RemoveDuplicate {
         }
         return n;
     }
-    
+    // Two-Pointer Approach.......
+    public int removeDuplicates2(int[] nums) {
+        int left = 1;
+        for (int right = 1; right < nums.length; right++) {
+            if (nums[right] != nums[right - 1]) {
+                nums[left++] = nums[right];
+            }
+        }
+        return left;
+    }
     public static void main(String[] args) {
         int[] nums={1,1,2,3,4};
         RemoveDuplicate  rDuplicate = new RemoveDuplicate();
         System.out.println(rDuplicate.removeDuplicates(nums));
+        System.out.println(rDuplicate.removeDuplicates2(nums));
 
     }
 }

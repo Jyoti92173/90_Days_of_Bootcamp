@@ -1,4 +1,9 @@
+// Problem Statement : You are given an integer array nums sorted in non-decreasing order. Your task is to remove duplicates from nums in-place so that each element appears only once.
+//After removing the duplicates, return the number of unique elements, denoted as k, such that the first k elements of nums contain the unique elements.
+// Return k as the final result
 package array;
+
+import java.util.TreeSet;
 
 public class RemoveDuplicate {
     public int removeDuplicates(int[] nums) {
@@ -27,11 +32,24 @@ public class RemoveDuplicate {
         }
         return left;
     }
+    //  Sorted Approach..........
+    public int removeDuplicate3(int[] nums) {
+        TreeSet<Integer> unique = new TreeSet<>();
+        for (int num : nums) {
+            unique.add(num);
+        }
+        int i = 0;
+        for (int num : unique) {
+            nums[i++] = num;
+        }
+        return unique.size();
+    }
     public static void main(String[] args) {
         int[] nums={1,1,2,3,4};
         RemoveDuplicate  rDuplicate = new RemoveDuplicate();
         System.out.println(rDuplicate.removeDuplicates(nums));
         System.out.println(rDuplicate.removeDuplicates2(nums));
+        System.out.println(rDuplicate.removeDuplicate3(nums));
 
     }
 }

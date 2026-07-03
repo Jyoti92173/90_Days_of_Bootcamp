@@ -1,3 +1,6 @@
+// Problem Statement : You are given an array of strings strs. Return the longest common prefix of all the strings.
+//
+//If there is no longest common prefix, return an empty string "".
 package array;
 
 import java.util.Arrays;
@@ -56,7 +59,7 @@ public class LongestCommonPrefix {
 
     public static void main(String[] args) {
         LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
-        
+
         String[] str = {"flower","flow","flight"}; 
         System.out.println(longestCommonPrefix.longestCommonPrefix(str));
 

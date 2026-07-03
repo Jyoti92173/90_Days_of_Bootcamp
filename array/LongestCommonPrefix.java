@@ -1,8 +1,10 @@
 package array;
 
+import java.util.Arrays;
+
 public class LongestCommonPrefix {
     // Brute-Force Approach..........
-    
+
     public String longestCommonPrefix(String[] strs) {
 
         if (strs == null || strs.length == 0) {
@@ -36,11 +38,30 @@ public class LongestCommonPrefix {
 
         return prefix.toString();
     }
+    // Sorting Approach.....
+    public String longestCommonPrefix1(String[] strs) {
+        if (strs.length == 1) {
+            return strs[0];
+        }
+
+        Arrays.sort(strs);
+        int N = Math.min(strs[0].length(), strs[strs.length - 1].length());
+        for (int i = 0; i < N; i++) {
+            if (strs[0].charAt(i) != strs[strs.length - 1].charAt(i)) {
+                return strs[0].substring(0, i);
+            }
+        }
+        return strs[0];
+    }
 
     public static void main(String[] args) {
         LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
+        
         String[] str = {"flower","flow","flight"}; 
         System.out.println(longestCommonPrefix.longestCommonPrefix(str));
+
+        String[] str1 = {"bat","bag","bank","band"};
+        System.out.println(longestCommonPrefix.longestCommonPrefix1(str1));
 
     }
 }

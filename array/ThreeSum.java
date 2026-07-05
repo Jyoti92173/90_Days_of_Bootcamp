@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ThreeSum {
     // Brute-Force Approach............f
-    public List<List<Integer>> threeSum(int[] nums) {
+    public static List<List<Integer>> threeSum(int[] nums) {
         Set<List<Integer>> res = new HashSet<>();
         Arrays.sort(nums);
         for (int i = 0; i < nums.length; i++) {
@@ -21,6 +21,9 @@ public class ThreeSum {
     }
     public static void main(String[] args) {
         int[] nums = {-1, 0, 1, 2, -1, -4};
-        System.out.println(Arrays.toString(nums));
+        List<List<Integer>> ans = threeSum(nums);
+
+        System.out.println(ans);
+       
     }
 }

@@ -11,7 +11,7 @@ public class BinarySearch {
     public int binarySearch(int[] arr,int target){
 
         int i = 0;
-        while(i<arr.length){
+        while(i < arr.length){
             if(arr[i]==target){
                 return i;
             }

@@ -32,6 +32,20 @@ public class ReverseList {
         return prev;
     }
 
+    // Recursion Approach.......
+    public ListNode reverseList2(ListNode head) {
+        if (head == null || head.next == null) {
+            return null;
+        }
+        ListNode newHead = head;
+        if (head.next == null) {
+            newHead = reverseList(head.next);
+            head.next.next = head;
+        }
+        head.next = null;
+        return newHead;
+    }
+
     public static void main(String[] args) {
 
         // Create linked list: 1 -> 2 -> 3 -> 4 -> 5
@@ -49,6 +63,21 @@ public class ReverseList {
 
         System.out.println("Reversed List:");
         printList(head);
+
+        // Second linked list for Recursive
+        ListNode head2 = new ListNode(1);
+        head2.next = new ListNode(2);
+        head2.next.next = new ListNode(3);
+        head2.next.next.next = new ListNode(4);
+        head2.next.next.next.next = new ListNode(5);
+
+        System.out.println("\nOriginal List Again:");
+        printList(head2);
+
+        head2 = obj.reverseList2(head2);
+
+        System.out.println("After Recursive Reverse:");
+        printList(head2);
     }
 
     public static void printList(ListNode head) {

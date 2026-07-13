@@ -1,3 +1,8 @@
+// Problem Statement: You are given an integer array nums of length n. Create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for 0 <= i < n (0-indexed).
+//
+//Specifically, ans is the concatenation of two nums arrays.
+
+
 package array;
 
 import java.util.Arrays;

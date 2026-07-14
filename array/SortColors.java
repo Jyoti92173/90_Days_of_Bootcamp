@@ -72,9 +72,27 @@ public class SortColors {
             }
         }
     }
+    // Three Pointer Approach.......
 
-    public void sortColor(int[] nums){
-        
+    public void sortColors3(int[] nums) {
+        int i = 0, l = 0, r = nums.length - 1;
+        while (i <= r) {
+            if (nums[i] == 0) {
+                swap(nums, l, i);
+                l++;
+            } else if (nums[i] == 2) {
+                swap(nums, i, r);
+                r--;
+                i--;
+            }
+            i++;
+        }
+    }
+
+    private void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
     }
     public static void main(String[] args) {
         int[] nums= {1,0,1,2};
@@ -83,6 +101,8 @@ public class SortColors {
         System.out.println(Arrays.toString(nums));
 
         sc.sortColors2(nums);
+        System.out.println(Arrays.toString(nums));
+        sc.sortColors3(nums);
         System.out.println(Arrays.toString(nums));
     }
 }

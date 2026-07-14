@@ -45,6 +45,22 @@ public class SortColors {
             nums[index] = 2;
             index++;
             count2--;
+
+        }
+    }
+
+    // Counting Sort Approach..........
+    public void sortColors2(int[] nums) {
+        int[] count = new int[3];
+        for (int num : nums) {
+            count[num]++;
+        }
+
+        int index = 0;
+        for (int i = 0; i < 3; i++) {
+            while (count[i]-- > 0) {
+                nums[index++] = i;
+            }
         }
     }
 
@@ -55,6 +71,9 @@ public class SortColors {
         int[] nums= {1,0,1,2};
         SortColors sc = new SortColors();
         sc.sortColors(nums);
+        System.out.println(Arrays.toString(nums));
+
+        sc.sortColors2(nums);
         System.out.println(Arrays.toString(nums));
     }
 }

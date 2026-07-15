@@ -9,8 +9,8 @@ import java.util.Arrays;
 
 public class ProductOfArrayExceptItself {
     // Brute force approach..............
-    public static int[] productExceptSelf(int[] nums) {
 
+    public static int[] productExceptSelf(int[] nums) {
         int  n= nums.length;
         int[] output = new int[n];
         for (int i = 0; i < n; i++) {

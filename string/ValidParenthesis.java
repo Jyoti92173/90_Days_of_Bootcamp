@@ -22,7 +22,7 @@ public class ValidParenthesis {
         }
         return s.isEmpty();
     }
-
+    // Stack Approach.............
     public boolean isValid2(String s) {
         Stack<Character> stack = new Stack<>();
         Map<Character, Character> closeToOpen = new HashMap<>();

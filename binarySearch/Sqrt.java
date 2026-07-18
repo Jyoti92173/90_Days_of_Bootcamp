@@ -1,7 +1,7 @@
 package binarySearch;
 
 public class Sqrt {
-    public int mySqrt(int x) {
+    public int mySqrt1(int x) {
         if(x==0){
             return 0;
         }
@@ -17,10 +17,31 @@ public class Sqrt {
         return res;
     }
 
+    public int mySqrt(int x) {
+        int l = 0, r = x;
+        int res = 0;
+
+        while (l <= r) {
+            int m = l + (r - l) / 2;
+            if ((long) m * m > x) {
+                r = m - 1;
+            } else if ((long) m * m < x) {
+                l = m + 1;
+                res = m;
+            } else {
+                return m;
+            }
+        }
+
+        return res;
+    }
+
+
+
     public static void main(String[] args) {
         int x = 9;
         Sqrt sqrt = new Sqrt();
         System.out.println(sqrt.mySqrt(x));
-
+        System.out.println(sqrt.mySqrt1(x));
     }
 }

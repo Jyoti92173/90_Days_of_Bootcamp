@@ -14,6 +14,13 @@ public class Sqrt {
             res = i;
         }
 
-        return res;f
+        return res;
+    }
+
+    public static void main(String[] args) {
+        int x = 9;
+        Sqrt sqrt = new Sqrt();
+        System.out.println(sqrt.mySqrt(x));
+
     }
 }

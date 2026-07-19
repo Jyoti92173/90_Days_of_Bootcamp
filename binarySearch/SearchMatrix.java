@@ -13,7 +13,7 @@ public class SearchMatrix {
         }
         return false;
     }
-
+// Brute-Force Approach.......
     public boolean searchMatrix1(int[][] matrix, int target) {
         for (int r = 0; r < matrix.length; r++) {
             for (int c = 0; c < matrix[r].length; c++) {

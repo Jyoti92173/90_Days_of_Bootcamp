@@ -1,5 +1,7 @@
-package array;
+// Problem Statement : You are given an array of characters which represents a string s. Write a function which reverses a string.
+// You must do this by modifying the input array in-place with O(1) extra memory.
 
+package array;
 import java.util.Arrays;
 import java.util.Stack;
 
@@ -39,6 +41,7 @@ public class ReverseString {
             right--;
         }
     }
+
     // Stack Approach............
 
     public static void reverseStringUsingStack(char[] s ){

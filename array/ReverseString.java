@@ -3,6 +3,7 @@ package array;
 import java.util.Arrays;
 import java.util.Stack;
 
+
 public class ReverseString {
 
     // Brute Force
@@ -38,6 +39,19 @@ public class ReverseString {
             right--;
         }
     }
+    // Stack Approach............
+    public static void reverseStringUsingStack(char[] s ){
+        Stack<Character> stack = new Stack<>();
+        for(char c : s){
+            stack.push(c);
+        }
+        int i = 0;
+        while (!stack.isEmpty()){
+            s[i++] = stack.pop();
+        }
+
+    }
+
     public static void reverseStringUsingRecursion(char[] s) {
         reverse(s, 0, s.length - 1);
     }
@@ -65,6 +79,10 @@ public class ReverseString {
         char[] s3 = {'n','e','e','t'};
         reverseStringUsingRecursion(s3);
         System.out.println("Recursion: " + Arrays.toString(s3));
+
+        char[] s4 = {'n','e','e','t'};
+        reverseStringUsingStack(s4);
+        System.out.println("Stack: " + Arrays.toString(s4));
 
     }
 }

@@ -1,6 +1,7 @@
 package Math;
 
 public class ReverseInteger {
+    // Mathematics Approach.........
     public int reverseInteger(int number){
         long reversedNumber = 0;
         while(number!=0){
@@ -16,6 +17,6 @@ public class ReverseInteger {
     public static void main(String[] args){
         int number = 321;
         System.out.println(new ReverseInteger().reverseInteger(number));
-        
+
     }
 }

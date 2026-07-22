@@ -1,6 +1,7 @@
 package Math;
 
 public class PowerOfTwo {
+    // Mathematical Approach........
     public boolean isPowerOfTwo(int x) {
         if(x==0){
             return false;

@@ -18,6 +18,8 @@ public class MissingNumber {
        }
        return -1;
     }
+
+    // Mathematical Approach..............
     public int  missingNumber2(int[] nums){
         int len = nums.length;
         int totalSum = len*(len+1)/2;

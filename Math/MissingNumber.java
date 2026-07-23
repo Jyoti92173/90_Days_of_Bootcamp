@@ -1,6 +1,7 @@
 package Math;
 
 public class MissingNumber {
+    // Brute-Force Approach.........
     public int missingNumber(int[] nums){
         int len = nums.length;
        for(int i=0;i<=len;i++){

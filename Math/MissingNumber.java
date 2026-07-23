@@ -18,9 +18,21 @@ public class MissingNumber {
        }
        return -1;
     }
+    public int  missingNumber2(int[] nums){
+        int len = nums.length;
+        int totalSum = len*(len+1)/2;
+        int sum = 0;
+        for(int num:nums){
+            sum = sum + num;
+        }
+        totalSum = totalSum - sum;
+        return totalSum;
+    }
+
     public static void main(String[] args){
         int[] nums= {0,1,2,3,5};
         MissingNumber m = new MissingNumber();
-        System.out.println(m.missingNumber(nums));
+        System.out.println("Brute-Force:"+ m.missingNumber(nums));
+        System.out.println(m.missingNumber2(nums));
     }
 }

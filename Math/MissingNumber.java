@@ -32,7 +32,7 @@ public class MissingNumber {
     public static void main(String[] args){
         int[] nums= {0,1,2,3,5};
         MissingNumber m = new MissingNumber();
-        System.out.println("Brute-Force:"+ m.missingNumber(nums));
-        System.out.println(m.missingNumber2(nums));
+        System.out.println("Brute-Force :" + m.missingNumber(nums));
+        System.out.println("Mathematical Approach :" + m.missingNumber2(nums));
     }
 }

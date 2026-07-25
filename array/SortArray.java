@@ -1,5 +1,4 @@
 // Problem Statement: You are given an array of integers nums, sort the array in ascending order and return it.
-//
 //You must solve the problem without using any built-in functions in O(nlog(n)) time complexity and with the smallest space complexity possible.
 
 package array;
@@ -11,8 +10,8 @@ public class SortArray {
     public static int[] sortArray(int[] nums) {
         int len = nums.length;
         for(int i=0; i<len; i++){
-            for(int j=i+1; j<len; j++){
-                if(nums[i]>nums[j]){
+            for(int j = i+1; j<len; j++){
+                if(nums[i] > nums[j]){
                     int temp = nums[i];
                     nums[i] = nums[j];
                     nums[j] = temp;
@@ -20,8 +19,8 @@ public class SortArray {
             }
         }
         return nums;
-
     }
+
     // Two-Pointer Approach........
     public static int[] sortArray2(int[] nums) {
         mergeSort(nums, 0, nums.length - 1);
@@ -32,7 +31,6 @@ public class SortArray {
         if (left >= right) {
             return;
         }
-
         int mid = left + (right - left) / 2;
 
         // Sort left half

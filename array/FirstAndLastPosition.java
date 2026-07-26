@@ -16,7 +16,7 @@ public class FirstAndLastPosition {
         }
         return new int[]{first, last};
     }
-
+// Binary Search Approach........
     public int[] searchRange2(int[] nums, int target) {
         int first = findFirst(nums, target);
         int last = findLast(nums, target);

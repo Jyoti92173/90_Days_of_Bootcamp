@@ -3,6 +3,7 @@ package array;
 import java.util.Arrays;
 
 public class FirstAndLastPosition {
+    // Linear Search Approach........
     public int[] searchRange(int[] nums, int target) {
         int first = -1, last = -1;
         for (int i = 0; i < nums.length; i++) {

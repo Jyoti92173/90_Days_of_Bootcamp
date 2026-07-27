@@ -32,7 +32,7 @@ public class RomanToInteger {
 
     }
 
-    
+    // HashMap Approach..........
     public int romanToInt(String s) {
         Map<Character, Integer> romanValue = new HashMap<>();
         romanValue.put('I', 1);

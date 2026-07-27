@@ -1,6 +1,9 @@
 package string;
 
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class RomanToInteger {
     public int romanInteger(String s) {
         int prev =0, total = 0;
@@ -27,6 +30,30 @@ public class RomanToInteger {
             default: return 0;
         }
 
+    }
+
+    
+    public int romanToInt(String s) {
+        Map<Character, Integer> romanValue = new HashMap<>();
+        romanValue.put('I', 1);
+        romanValue.put('V', 5);
+        romanValue.put('X', 10);
+        romanValue.put('L', 50);
+        romanValue.put('C', 100);
+        romanValue.put('D', 500);
+        romanValue.put('M', 1000);
+
+        int result = 0;
+        int prev = 0;
+        int curr;
+
+        for (char roman : s.toCharArray()) {
+            curr = romanValue.get(roman);
+            result += (curr > prev) ? curr - 2 * prev : curr;
+            prev = curr;
+        }
+
+        return result;
     }
 
     public static void main(String[] args) {

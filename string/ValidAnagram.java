@@ -12,7 +12,7 @@ public class ValidAnagram {
         Arrays.sort(tArray);
         return  Arrays.equals(sArray, tArray);
     }
-
+// Count Character Approach...........
     public boolean isAnagram2(String s, String t) {
         if(s.length() != t.length()) return false;
         int[] count = new int[26];

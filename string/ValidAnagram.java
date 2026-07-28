@@ -30,8 +30,8 @@ public class ValidAnagram {
         String s = "anagram";
         String t = "nagaram";
         ValidAnagram validAnagram = new ValidAnagram();
-        System.out.println("Brute Force-Sort and Compare Approach:"+ validAnagram.isAnagram(s,t));
-        System.out.println(validAnagram.isAnagram2(s,t));
+        System.out.println("Brute Force-Sort and Compare Approach: "+ validAnagram.isAnagram(s,t));
+        System.out.println("Count Character Approach: "+ validAnagram.isAnagram2(s,t));
 
     }
 }

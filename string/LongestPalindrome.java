@@ -30,6 +30,6 @@ public class LongestPalindrome {
 
     public static void main(String[] args) {
         LongestPalindrome lp = new LongestPalindrome();
-        System.out.println(lp.longestPalindrome("babad"));
+        System.out.println("Brute Force Approach : " + lp.longestPalindrome("babad"));
     }
 }

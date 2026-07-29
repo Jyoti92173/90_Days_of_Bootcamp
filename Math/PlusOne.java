@@ -54,5 +54,6 @@ public class PlusOne {
     public static void main(String[] args) {
         PlusOne p = new PlusOne();
         System.out.println(Arrays.toString(p.plusOne(new int[]{1, 2, 3})));
+        System.out.println(Arrays.toString(p.plusOne2(new int[]{1, 2, 3,4})));
     }
 }

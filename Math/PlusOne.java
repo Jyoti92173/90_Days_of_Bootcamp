@@ -29,6 +29,28 @@ public class PlusOne {
 
         return answer;
     }
+
+    //
+
+    public int[] plusOne2(int[] digits) {
+        int len = digits.length; // length of array;
+
+        // start the loop from last index;
+        for (int i = len-1; i>=0; i--) {
+
+            if (digits[i] == 9) {
+                digits[i] = 0;
+            }else {
+                // if ith value is not 9 we just add 1 to it and return;
+                digits[i] += 1;
+                return digits;
+            }
+        }
+
+        int[] arr = new int[len+1];
+        arr[0] = 1;
+        return arr;
+    }
     public static void main(String[] args) {
         PlusOne p = new PlusOne();
         System.out.println(Arrays.toString(p.plusOne(new int[]{1, 2, 3})));

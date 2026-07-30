@@ -3,6 +3,7 @@
 package Math;
 
 public class MyPow {
+    // Brute Force Approach................
     public double myPow(double x, int n) {
         if(x==0){
             return 0;

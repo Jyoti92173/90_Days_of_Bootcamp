@@ -17,7 +17,8 @@ public class MyPow {
         }
         return n>=0 ? result:1 /result;
     }
-
+// Binary Exponentiation Approach...............
+    
     public double myPow1(double x, int n) {
         if (x == 0) return 0;
         if (n == 0) return 1;

@@ -18,7 +18,7 @@ public class MyPow {
         return n>=0 ? result:1 /result;
     }
 // Binary Exponentiation Approach...............
-    
+
     public double myPow1(double x, int n) {
         if (x == 0) return 0;
         if (n == 0) return 1;
@@ -39,7 +39,7 @@ public class MyPow {
         double x = 2.00000;
         int n = 5;
         MyPow mPow = new MyPow();
-        System.out.println(mPow.myPow(x,n));
+        System.out.println("Binary Force:"+mPow.myPow(x,n));
         int m = -3;
         System.out.println(mPow.myPow1(x,m));
     }

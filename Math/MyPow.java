@@ -17,10 +17,29 @@ public class MyPow {
         }
         return n>=0 ? result:1 /result;
     }
+
+    public double myPow1(double x, int n) {
+        if (x == 0) return 0;
+        if (n == 0) return 1;
+
+        double res = 1;
+        long power = Math.abs((long)n);
+
+        while (power > 0) {
+            if ((power & 1) == 1) {
+                res *= x;
+            }
+            x *= x;
+            power >>= 1;
+        }
+        return n >= 0 ? res : 1 / res;
+    }
     public static void main(String[] args) {
         double x = 2.00000;
         int n = 5;
         MyPow mPow = new MyPow();
         System.out.println(mPow.myPow(x,n));
+        int m = -3;
+        System.out.println(mPow.myPow1(x,m));
     }
 }

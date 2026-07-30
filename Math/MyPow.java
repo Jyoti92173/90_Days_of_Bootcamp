@@ -39,8 +39,8 @@ public class MyPow {
         double x = 2.00000;
         int n = 5;
         MyPow mPow = new MyPow();
-        System.out.println("Binary Force:"+mPow.myPow(x,n));
+        System.out.println("Binary Force:"+ mPow.myPow(x,n));
         int m = -3;
-        System.out.println(mPow.myPow1(x,m));
+        System.out.println("Binary Exponentiation:"+ mPow.myPow1(x,m));
     }
 }

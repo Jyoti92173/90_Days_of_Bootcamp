@@ -1,6 +1,7 @@
 package array;
 
 public class CanPlaceFlower {
+    // Linear Traversal Approach........
     public boolean canPlaceFlowers(int[] flower, int n) {
         if (n == 0) {
             return true;

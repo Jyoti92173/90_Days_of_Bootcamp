@@ -20,6 +20,7 @@ public class Concatenation {
         }
         return result;
     }
+
     // One-Pass Approach..........
     public static int[] getConcatenation2(int[] nums) {
         int n = nums.length;
@@ -36,5 +37,6 @@ public class Concatenation {
         int[] nums = {1,2,3,4};
         System.out.println(Arrays.toString(getConcatenation(nums)));
         System.out.println(Arrays.toString(getConcatenation2(nums)));
+
     }
 }

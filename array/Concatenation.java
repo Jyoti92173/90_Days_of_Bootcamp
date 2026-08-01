@@ -30,7 +30,7 @@ public class Concatenation {
            res[i] = nums[i];
            res[i+n] = nums[i];
         }
-    return  res;
+        return  res;
     }
 
 

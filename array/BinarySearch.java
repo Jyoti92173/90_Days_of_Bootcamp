@@ -10,12 +10,17 @@ public class BinarySearch {
 
     public int binarySearch(int[] arr,int target){
 
-        int i = 0;
-        while(i < arr.length){
+//        int i = 0;
+//        while(i < arr.length){
+//            if(arr[i]==target){
+//                return i;
+//            }
+//            i++;
+//        }
+        for(int i = 0; i<arr.length; i++){
             if(arr[i]==target){
                 return i;
             }
-            i++;
         }
         return -1;
     }

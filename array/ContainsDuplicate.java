@@ -34,7 +34,7 @@ public class ContainsDuplicate {
 
     public static void main(String[] args) {
     int[] nums = {1, 2, 3, 1};
-        System.out.println(hasDuplicate(nums));
+        System.out.println("Sorting Based Approach : " + hasDuplicate(nums));
         System.out.println(hasDuplicateUsingSet(nums));
     }
 }

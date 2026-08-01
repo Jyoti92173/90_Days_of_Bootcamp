@@ -35,8 +35,8 @@ public class Concatenation {
 
 
     public static void main(String[] args) {
-        int[] nums = {1,2,3,4};
-        System.out.println(Arrays.toString(getConcatenation(nums)));
+        int[] nums = {1,5,8,9};
+        System.out.println("Brute Force Approach: " + Arrays.toString(getConcatenation(nums)));
         System.out.println(Arrays.toString(getConcatenation2(nums)));
 
     }

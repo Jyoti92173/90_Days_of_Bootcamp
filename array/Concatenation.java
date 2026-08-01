@@ -10,15 +10,16 @@ import java.util.Arrays;
 public class Concatenation {
     // Brute-Force Approach.................
     public static int[] getConcatenation(int[] nums) {
-        int n = nums.length;
-        int[] result = new int[2*n];
-        for (int i = 0; i < n; i++) {
-            result[i] = nums[i];
-        }
-        for(int i = 0; i<n ; i++){
-            result[i+n]= nums[i];
-        }
-        return result;
+       int n = nums.length;
+       int [] res = new int[2*n];
+
+       for(int i=0;i<n;i++){
+           res[i] = nums[i];
+       }
+       for(int i = 0; i<n;i++){
+           res[i+n]= nums[i];
+       }
+       return res;
     }
 
     // One-Pass Approach..........

@@ -4,6 +4,7 @@
 package hashtable;
 
 public class Difference {
+    //  Mathematical Approach - Sum of ASCII Value.
     public char findTheDifference(String s, String t) {
        int sum1 = 0;
        int sum2 = 0;

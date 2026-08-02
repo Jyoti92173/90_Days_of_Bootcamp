@@ -44,7 +44,8 @@ public class Intersection {
 
             return result;
     }
-    //
+    // Using HashSet Approach..........
+
     public int[] intersection(int[] nums1, int[] nums2) {
         HashSet<Integer> s1 = new HashSet<>();
         HashSet<Integer> s2 = new HashSet<>();

@@ -1,6 +1,7 @@
 package stack;
 
 public class ValidParenthesis {
+    // Brute Force Approach..........
     public boolean isValid(String s) {
         while (s.contains("()") || s.contains("{}") || s.contains("[]")) {
 
@@ -14,7 +15,7 @@ public class ValidParenthesis {
     public static void main(String[] args) {
         String s = "([{}])";
         System.out.println(new ValidParenthesis().isValid(s));
-        
+
 
     }
 }

@@ -32,8 +32,7 @@ public class HappyNumber {
 
         return false;
     }
-
-
+    // Hashtable Approach.......
     public boolean isHappy2(int n) {
         Set<Integer> visit = new HashSet<>();
 

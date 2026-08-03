@@ -35,6 +35,7 @@ public class HappyNumber {
 
     // Hashtable Approach.......
     public boolean isHappy2(int n) {
+        
         Set<Integer> visit = new HashSet<>();
 
         while (!visit.contains(n)) {

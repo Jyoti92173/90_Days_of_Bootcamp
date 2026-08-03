@@ -62,7 +62,7 @@ public class HappyNumber {
     public static void main(String[] args) {
         int n = 19;
         HappyNumber h = new HappyNumber();
-        System.out.println("Brute Force : " + h.isHappy(n));
+        System.out.println("Brute Force Approach : " + h.isHappy(n));
         System.out.println("Hashtable Approach : " + h.isHappy2(n));
 
     }

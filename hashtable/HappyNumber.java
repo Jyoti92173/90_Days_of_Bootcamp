@@ -1,6 +1,7 @@
 package hashtable;
 
 public class HappyNumber {
+    // Brute Force Approach.........
     public boolean isHappy(int n) {
         int sum = n;
         int x = n;

@@ -24,7 +24,7 @@ public class FindMissingElement {
 
         return res;
     }
-    
+
     // Boolean Array Approach.........
 
     public List<Integer> findMissingElements2(int[] nums) {
@@ -50,8 +50,10 @@ public class FindMissingElement {
     }
     public static void main(String[] args) {
         int[] nums= {1,4,2,5};
+        int[] nums2 = {5,1};
         FindMissingElement obj = new FindMissingElement();
-        List<Integer> res = obj.findMissingElements(nums);
-        System.out.println(res);
+        List<Integer> res1 = obj.findMissingElements(nums);
+        List<Integer> res2 = obj.findMissingElements(nums2);
+        System.out.println(res2);
     }
 }

@@ -60,5 +60,6 @@ public class FindMissingElement {
         List<Integer> res1 = obj.findMissingElements(nums);
         List<Integer> res2 = obj.findMissingElements(nums2);
         System.out.println("Sorting Approach : " + res1);
+        System.out.println("Boolean Array Approach : " + res2);
     }
 }

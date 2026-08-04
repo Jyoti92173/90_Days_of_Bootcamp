@@ -48,6 +48,7 @@ public class FindMissingElement {
 
         return res;
     }
+    
     public static void main(String[] args) {
         int[] nums= {1,4,2,5};
         int[] nums2 = {5,1};

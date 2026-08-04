@@ -24,7 +24,7 @@ public class FindMissingElement {
 
         return res;
     }
-
+    // Boolean Array Approach.........
     public List<Integer> findMissingElements2(int[] nums) {
         List<Integer> res = new ArrayList<>();
         boolean[] contains = new boolean[101];

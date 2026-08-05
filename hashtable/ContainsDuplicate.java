@@ -16,7 +16,7 @@ public class ContainsDuplicate {
     public static void main(String[] args) {
         int[] nums = {1,2,3,1};
         ContainsDuplicate dc = new ContainsDuplicate();
-        System.out.println(dc.containsDuplicate(nums));
+        System.out.println("Brute Force Approach : " + dc.containsDuplicate(nums));
 
     }
 }

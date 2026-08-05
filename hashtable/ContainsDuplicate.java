@@ -5,6 +5,7 @@ package hashtable;
 import java.util.Arrays;
 
 public class ContainsDuplicate {
+    // Brute Force Approach ................
     public boolean containsDuplicate(int[] nums){
      int n = nums.length;
      Arrays.sort(nums);

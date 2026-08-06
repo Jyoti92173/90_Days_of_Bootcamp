@@ -48,6 +48,6 @@ public class ReverseString {
 
         r.reverseString2(s);
 
-        System.out.println("Two-Pointer Approach :" +Arrays.toString(s));
+        System.out.println("Two-Pointer Approach : " +Arrays.toString(s));
     }
 }

@@ -7,7 +7,7 @@ public class ReverseString {
     int n =  s.length;
     char[] temp = new char[n];
     int j = 0;
-        // Copy in reverse order
+        
         for (int i = s.length - 1; i >= 0; i--) {
             temp[j] = s[i];
             j++;
@@ -25,7 +25,7 @@ public class ReverseString {
 
         ReverseString r = new ReverseString();
 
-        r.reverseString(s); 
+        r.reverseString(s);
 
         System.out.println(Arrays.toString(s));
     }

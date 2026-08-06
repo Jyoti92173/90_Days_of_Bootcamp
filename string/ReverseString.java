@@ -55,6 +55,7 @@ public class ReverseString {
 
         char[] s1 = {'h', 'e', 'l', 'l', 'o'};
         char[] s2 = {'h','e','l','l','o'};
+        char[] s3 = {'b','a','n','a','n','a'};
         ReverseString r = new ReverseString();
 
         r.reverseString(s1);
@@ -63,7 +64,8 @@ public class ReverseString {
 
         r.reverseString2(s2);
         System.out.println("Two Pointer: " + Arrays.toString(s2));
-//        r.reverseString3(s);
-//        System.out.println("Two-Pointer Approach : " + Arrays.toString(s));
+
+        r.reverseString3(s3);
+        System.out.println("Two Pointer: " + Arrays.toString(s3));
     }
 }

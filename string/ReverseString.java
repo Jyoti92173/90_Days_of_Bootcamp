@@ -21,7 +21,7 @@ public class ReverseString {
         }
 
     }
-    
+    // Two-Pointer Approach..........
     public void  reverseString2(char[] s){
         int n = s.length;
        int start = 0;

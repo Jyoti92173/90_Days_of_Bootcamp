@@ -22,6 +22,7 @@ public class ReverseString {
 
     }
     // Two-Pointer Approach..........
+
     public void  reverseString2(char[] s){
         int n = s.length;
        int start = 0;
@@ -47,6 +48,6 @@ public class ReverseString {
 
         r.reverseString2(s);
 
-        System.out.println("Two-Pointer Approach :"+Arrays.toString(s));
+        System.out.println("Two-Pointer Approach :" +Arrays.toString(s));
     }
 }

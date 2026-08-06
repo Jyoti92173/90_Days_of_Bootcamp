@@ -21,6 +21,7 @@ public class ReverseString {
         }
 
     }
+    
     public void  reverseString2(char[] s){
         int n = s.length;
        int start = 0;
@@ -43,7 +44,9 @@ public class ReverseString {
         r.reverseString(s);
 
         System.out.println("Brute Force Approach : " + Arrays.toString(s));
+
         r.reverseString2(s);
+
         System.out.println("Two-Pointer Approach :"+Arrays.toString(s));
     }
 }

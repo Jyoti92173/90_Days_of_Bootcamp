@@ -27,7 +27,7 @@ public class ReverseString {
         int n = s.length;
        int start = 0;
        int end = n-1;
-       while(start<end){
+       while(start < end){
            char temp = s[start];
            s[start] = s[end];
            s[end] = temp;

@@ -21,6 +21,19 @@ public class ReverseString {
         }
 
     }
+    public void  reverseString2(char[] s){
+        int n = s.length;
+       int start = 0;
+       int end = n-1;
+       while(start<end){
+           char temp = s[start];
+           s[start] = s[end];
+           s[end] = temp;
+           start++;
+           end--;
+       }
+
+    }
     public static void main(String[] args) {
 
         char[] s = {'h', 'e', 'l', 'l', 'o'};
@@ -29,6 +42,8 @@ public class ReverseString {
 
         r.reverseString(s);
 
+        System.out.println(Arrays.toString(s));
+        r.reverseString2(s);
         System.out.println(Arrays.toString(s));
     }
 }

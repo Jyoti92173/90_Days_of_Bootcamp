@@ -63,7 +63,7 @@ public class ReverseString {
         System.out.println("Brute Force Approach : " + Arrays.toString(s1));
 
         r.reverseString2(s2);
-        System.out.println("Two Pointer: " + Arrays.toString(s2));
+        System.out.println("Two Pointer Approach: " + Arrays.toString(s2));
 
         r.reverseString3(s3);
         System.out.println("Recursive Approach: " + Arrays.toString(s3));

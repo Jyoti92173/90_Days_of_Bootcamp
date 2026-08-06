@@ -3,11 +3,13 @@ package string;
 import java.util.Arrays;
 
 public class ReverseString {
+    // Brute Force Approach........
     public void reverseString(char[] s){
     int n =  s.length;
     char[] temp = new char[n];
     int j = 0;
-        
+
+        // Copy in reverse order
         for (int i = s.length - 1; i >= 0; i--) {
             temp[j] = s[i];
             j++;

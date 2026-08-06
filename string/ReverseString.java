@@ -24,34 +24,46 @@ public class ReverseString {
         }
 
     }
-    
+
     // Two-Pointer Approach..........
 
     public void  reverseString2(char[] s){
-        int n = s.length;
-       int start = 0;
-       int end = n-1;
-       while(start < end){
-           char temp = s[start];
-           s[start] = s[end];
-           s[end] = temp;
-           start++;
-           end--;
-       }
 
+        int left=0,right=s.length-1;
+        while(left<right){
+            char temp=s[left];
+            s[left]=s[right];
+            s[right]=temp;
+            left++;
+            right--;
+        }
+
+    }
+
+    public void reverseString3(char[] s) {
+        reverse(s, 0, s.length - 1);
+    }
+
+    private void reverse(char[] s, int left, int right) {
+        if (left >= right) return;
+        char temp = s[left];
+        s[left] = s[right];
+        s[right] = temp;
+        reverse(s, left + 1, right - 1);
     }
     public static void main(String[] args) {
 
-        char[] s = {'h', 'e', 'l', 'l', 'o'};
-
+        char[] s1 = {'h', 'e', 'l', 'l', 'o'};
+        char[] s2 = {'h','e','l','l','o'};
         ReverseString r = new ReverseString();
 
-        r.reverseString(s);
+        r.reverseString(s1);
 
-        System.out.println("Brute Force Approach : " + Arrays.toString(s));
+        System.out.println("Brute Force Approach : " + Arrays.toString(s1));
 
-        r.reverseString2(s);
-
-        System.out.println("Two-Pointer Approach : " +Arrays.toString(s));
+        r.reverseString2(s2);
+        System.out.println("Two Pointer: " + Arrays.toString(s2));
+//        r.reverseString3(s);
+//        System.out.println("Two-Pointer Approach : " + Arrays.toString(s));
     }
 }

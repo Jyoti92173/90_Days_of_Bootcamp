@@ -66,6 +66,6 @@ public class ReverseString {
         System.out.println("Two Pointer: " + Arrays.toString(s2));
 
         r.reverseString3(s3);
-        System.out.println("Two Pointer: " + Arrays.toString(s3));
+        System.out.println("Recursive Approach: " + Arrays.toString(s3));
     }
 }

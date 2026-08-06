@@ -42,8 +42,8 @@ public class ReverseString {
 
         r.reverseString(s);
 
-        System.out.println(Arrays.toString(s));
+        System.out.println("Brute Force Approach : " + Arrays.toString(s));
         r.reverseString2(s);
-        System.out.println(Arrays.toString(s));
+        System.out.println("Two-Pointer Approach :"+Arrays.toString(s));
     }
 }

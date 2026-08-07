@@ -34,6 +34,6 @@ public class SumOfSquareNumber {
         System.out.println("Brute Force Approach : "+ s.judgeSquareSum(c));
 
         int c1 = 3;
-        System.out.println(s.judgeSquareSum1(c1));
+        System.out.println("Two Pointer Approach : " + s.judgeSquareSum1(c1));
     }
 }

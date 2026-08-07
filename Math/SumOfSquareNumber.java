@@ -11,12 +11,28 @@ public class SumOfSquareNumber {
             }
         }
         return false;
-
+    }
+    public boolean judgeSquareSum1(int c) {
+        long left = 0, right = (long) Math.sqrt(c);
+        while (left <= right) {
+            long cur = left * left + right * right;
+            if (cur < c) {
+                left++;
+            } else if (cur > c) {
+                right--;
+            } else {
+                return true;
+            }
+        }
+        return false;
     }
     public static void main(String[] args) {
         int c = 5;
         SumOfSquareNumber s = new SumOfSquareNumber();
 
         System.out.println("Brute Force Approach : "+ s.judgeSquareSum(c));
+
+        int c1 = 3;
+        System.out.println(s.judgeSquareSum1(c1));
     }
 }

@@ -155,6 +155,6 @@ public class SortColors {
         System.out.println("Three Pointer Approach-II : "+Arrays.toString(nums));
 
         sc.sortColors5(nums1);
-        System.out.println("Counting Sort Approach : "+Arrays.toString(nums1));
+        System.out.println("Counting Sort Approach : " + Arrays.toString(nums1));
     }
 }

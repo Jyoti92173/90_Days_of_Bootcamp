@@ -17,6 +17,6 @@ public class SumOfSquareNumber {
         int c = 5;
         SumOfSquareNumber s = new SumOfSquareNumber();
 
-        System.out.println(s.judgeSquareSum(c));
+        System.out.println("Brute Force Approach : "+ s.judgeSquareSum(c));
     }
 }

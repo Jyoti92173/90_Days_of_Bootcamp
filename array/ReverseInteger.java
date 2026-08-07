@@ -8,6 +8,9 @@ public class ReverseInteger {
             reverse = reverse * 10 + remainder;
             x /= 10;
         }
+        if (reverse > Integer.MAX_VALUE || reverse < Integer.MIN_VALUE) {
+            return 0;
+        }
         return (int) reverse;
     }
     public static void main(String[] args) {

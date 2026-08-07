@@ -16,6 +16,10 @@ public class ReverseInteger {
     public static void main(String[] args) {
         int x = 123;
         ReverseInteger r = new ReverseInteger();
-        System.out.println("Mathematical Approach: " +  r.reverse(x));
+        System.out.println("Mathematical Approach : " +  r.reverse(x));
+
+        int y = -123;
+        ReverseInteger r2 = new ReverseInteger();
+        System.out.println("Mathematical Approach : " +  r2.reverse(y));
     }
 }

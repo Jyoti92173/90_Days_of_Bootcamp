@@ -12,6 +12,7 @@ public class SumOfSquareNumber {
         }
         return false;
     }
+    // Two Pointer Approach.........
     public boolean judgeSquareSum1(int c) {
         long left = 0, right = (long) Math.sqrt(c);
         while (left <= right) {

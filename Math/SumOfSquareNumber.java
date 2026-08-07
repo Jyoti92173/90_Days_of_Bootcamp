@@ -1,6 +1,7 @@
 package Math;
 
 public class SumOfSquareNumber {
+    // Brute Force Approach..........
     public boolean judgeSquareSum(int c) {
         for(long a = 0; a*a <= c; a++){
             for(long b = 0; b*b <= c; b++){

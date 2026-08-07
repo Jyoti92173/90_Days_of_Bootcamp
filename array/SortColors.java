@@ -143,15 +143,17 @@ public class SortColors {
 
         SortColors sc = new SortColors();
         sc.sortColors(nums);
-        System.out.println(Arrays.toString(nums));
+        System.out.println("Brute Force Approach:"+Arrays.toString(nums));
 
         sc.sortColors2(nums);
         System.out.println(Arrays.toString(nums));
+
         sc.sortColors3(nums);
         System.out.println(Arrays.toString(nums));
 
         sc.sortColors4(nums);
         System.out.println(Arrays.toString(nums));
+
         sc.sortColors5(nums1);
         System.out.println(Arrays.toString(nums1));
     }

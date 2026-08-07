@@ -113,6 +113,7 @@ public class SortColors {
             }
         }
     }
+    // Counting Sort Approach.......
     public void sortColors5(int[] nums) {
         int n= nums.length;
         int zeroCount = 0, oneCount = 0, twoCount = 0;

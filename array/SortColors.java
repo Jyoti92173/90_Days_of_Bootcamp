@@ -146,7 +146,7 @@ public class SortColors {
         System.out.println("Brute Force Approach:"+Arrays.toString(nums));
 
         sc.sortColors2(nums);
-        System.out.println("Counting Sort Approach :" +Arrays.toString(nums));
+        System.out.println("Counting Sort Approach : " +Arrays.toString(nums));
 
         sc.sortColors3(nums);
         System.out.println("Three Pointer Approach:"+Arrays.toString(nums));

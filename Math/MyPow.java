@@ -1,4 +1,4 @@
-// Problem Statement : Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+// Problem Statement :  Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
 
 package Math;
 

@@ -24,6 +24,8 @@ public class InOrderTraversal {
         res.add(node.val);
         inorder(node.right);
     }
+    
+    // Depth First Search Approach.......
     public List<Integer> inorderTraversal1(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();

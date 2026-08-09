@@ -3,9 +3,10 @@ package tree;
 import java.util.ArrayList;
 import java.util.List;
 
-// Using Recursion Approach....
+
 
 public class InOrderTraversal {
+    // Using Recursion Approach.........
     private List<Integer> res;
     public List<Integer> inorderTraversal(TreeNode root) {
         res = new ArrayList<>();

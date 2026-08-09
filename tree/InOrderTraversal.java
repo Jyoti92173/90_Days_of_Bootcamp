@@ -3,6 +3,8 @@ package tree;
 import java.util.ArrayList;
 import java.util.List;
 
+// Using Recursion Approach....
+
 public class InOrderTraversal {
     private List<Integer> res;
     public List<Integer> inorderTraversal(TreeNode root) {
@@ -31,7 +33,7 @@ public class InOrderTraversal {
         root.right.left.left = new TreeNode(8);
         root.right.left.right = new TreeNode(9);
         root.right.right.right = new TreeNode(10);
-        
+
         System.out.println(new InOrderTraversal().inorderTraversal(root));
     }
 

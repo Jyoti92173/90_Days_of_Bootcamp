@@ -5,8 +5,7 @@ package tree;
 
 import java.util.ArrayList;
 import java.util.List;
-
-
+import java.util.Stack;
 
 public class InOrderTraversal {
     // Using Recursion Approach.........
@@ -25,6 +24,23 @@ public class InOrderTraversal {
         res.add(node.val);
         inorder(node.right);
     }
+    public List<Integer> inorderTraversal1(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = root;
+
+        while (cur != null || !stack.isEmpty()) {
+            while (cur != null) {
+                stack.push(cur);
+                cur = cur.left;
+            }
+            cur = stack.pop();
+            res.add(cur.val);
+            cur = cur.right;
+        }
+
+        return res;
+    }
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
@@ -39,6 +55,7 @@ public class InOrderTraversal {
         root.right.right.right = new TreeNode(10);
 
         System.out.println(new InOrderTraversal().inorderTraversal(root));
+        System.out.println(new InOrderTraversal().inorderTraversal1(root));
     }
 
 }

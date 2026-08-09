@@ -55,7 +55,7 @@ public class InOrderTraversal {
         root.right.right.right = new TreeNode(10);
 
         System.out.println("Recursion Approach : " + new InOrderTraversal().inorderTraversal(root));
-        System.out.println("Depth First Search :" + new InOrderTraversal().inorderTraversal1(root));
+        System.out.println("Depth First Search : " + new InOrderTraversal().inorderTraversal1(root));
     }
 
 }

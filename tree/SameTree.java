@@ -21,7 +21,7 @@ public class SameTree {
         }
         return isSameTree(p.left,q.left) && isSameTree(p.right, q.right);
     }
-
+//  Breadth First Search............
     public boolean isSameTree2(TreeNode p, TreeNode q) {
         Queue<TreeNode> q1 = new LinkedList<>();
         Queue<TreeNode> q2 = new LinkedList<>();

@@ -18,8 +18,9 @@ public class SameTree {
         }
         return isSameTree(p.left,q.left) && isSameTree(p.right, q.right);
     }
-    
+
     public static void main(String[] args) {
+        
         SameTree tree = new SameTree();
         TreeNode root1 = new TreeNode(1);
         root1.left = new TreeNode(2);

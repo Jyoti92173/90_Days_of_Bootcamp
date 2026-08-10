@@ -59,7 +59,7 @@ public class SameTree {
         root2.right = new TreeNode(3);
 
         System.out.println("Depth First Search Approach : " + tree.isSameTree(root1,root2));
-        System.out.println(" Breadth First Search:"+tree.isSameTree2(root1,root2));
+        System.out.println("Breadth First Search:"+tree.isSameTree2(root1,root2));
     }
 
 }

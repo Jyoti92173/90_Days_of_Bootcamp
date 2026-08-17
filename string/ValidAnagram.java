@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class ValidAnagram {
 // Brute Force - Sort and Compare Approach.........
+
     public boolean isAnagram(String s, String t) {
         if(s.length() != t.length()) return false;
         char[] sArray = s.toCharArray();

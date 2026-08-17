@@ -4,7 +4,7 @@
 package string;
 
 public class LengthOfLastWord {
-    
+
     // Reverse Traversal Approach..........
     public int lengthOfLastWord(String s) {
         int n = s.length();
@@ -21,6 +21,7 @@ public class LengthOfLastWord {
         }
         return count;
     }
+    
     public static void main(String[] args) {
         String s = "Hello World";
         LengthOfLastWord lengthOfLastWord = new LengthOfLastWord();

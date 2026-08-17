@@ -26,6 +26,7 @@ public class ValidParenthesis {
 
     // Stack Approach.............
     public boolean isValid2(String s) {
+
         Stack<Character> stack = new Stack<>();
         Map<Character, Character> closeToOpen = new HashMap<>();
         closeToOpen.put(')', '(');
@@ -47,7 +48,7 @@ public class ValidParenthesis {
     }
 
     public static void main(String[] args) {
-        
+
         String s = "[]";
         ValidParenthesis p = new ValidParenthesis();
         System.out.println(p.isValid("()"));

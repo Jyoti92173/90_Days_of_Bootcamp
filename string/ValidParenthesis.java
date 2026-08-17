@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.Stack;
 
 public class ValidParenthesis {
-    
+
     // Brute-Force Approach...........
     public boolean isValid(String s) {
         while (s.contains("()") || s.contains("{}") || s.contains("[]")) {
@@ -23,6 +23,7 @@ public class ValidParenthesis {
         }
         return s.isEmpty();
     }
+    
     // Stack Approach.............
     public boolean isValid2(String s) {
         Stack<Character> stack = new Stack<>();

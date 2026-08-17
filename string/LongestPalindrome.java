@@ -13,6 +13,7 @@ public class LongestPalindrome {
 
     // Brute Force Approach..........
     public String longestPalindrome(String s) {
+        
         int maxLength = 0;
         String result = "";
         for(int i = 0; i < s.length(); i++){
@@ -39,7 +40,7 @@ public class LongestPalindrome {
     }
 
     public static void main(String[] args) {
-        
+
         LongestPalindrome lp = new LongestPalindrome();
         System.out.println("Brute Force Approach : " + lp.longestPalindrome("babad"));
     }

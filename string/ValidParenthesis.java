@@ -23,7 +23,7 @@ public class ValidParenthesis {
         }
         return s.isEmpty();
     }
-    
+
     // Stack Approach.............
     public boolean isValid2(String s) {
         Stack<Character> stack = new Stack<>();
@@ -55,8 +55,6 @@ public class ValidParenthesis {
         System.out.println(p.isValid("({[]})"));
         System.out.println(p.isValid("(]"));
         System.out.println(p.isValid("([)]"));
-
-
         System.out.println(p.isValid2("[]"));
         System.out.println(p.isValid2("([)]"));
 

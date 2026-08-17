@@ -27,7 +27,7 @@ public class LongestPalindrome {
         }
         return result;
     }
-    
+
     private boolean isPalindrome(String s){
 
         int left = 0;;

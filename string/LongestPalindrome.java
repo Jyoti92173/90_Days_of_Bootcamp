@@ -10,7 +10,7 @@
 package string;
 
 public class LongestPalindrome {
-    
+
     // Brute Force Approach..........
     public String longestPalindrome(String s) {
         int maxLength = 0;
@@ -27,6 +27,7 @@ public class LongestPalindrome {
         return result;
     }
     private boolean isPalindrome(String s){
+        
         int left = 0;;
         int right = s.length()-1;
         while(left < right){

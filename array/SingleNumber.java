@@ -1,7 +1,7 @@
 package array;
 
 public class SingleNumber {
-    // Brute Force Approach..
+    // Brute Force Approach...
     public int singleNumber(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
             boolean flag = true;

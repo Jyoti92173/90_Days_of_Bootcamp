@@ -10,10 +10,11 @@ public class SingleNumber {
         }
         return result;
     }
+    
     public static void main(String[] args) {
     int[] nums = {1,2,3,4,5};
     SingleNumber singleNumber = new SingleNumber();
     System.out.println(singleNumber.singleNumber(nums));
-    
+
     }
 }

@@ -1,6 +1,7 @@
 package array;
 
 public class SingleNumber {
+    // Bit Manipulation Approach.........
     public int singleNumber(int[] nums) {
         int result = 0;
         int n = nums.length;

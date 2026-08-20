@@ -8,8 +8,7 @@
 //n
 //)
 //O(n) runtime complexity and use only
-//O
-//(1)
+//O(1)
 //O(1) extra space.
 
 package array;

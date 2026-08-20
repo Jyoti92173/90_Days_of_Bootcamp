@@ -5,8 +5,7 @@
 //You must implement a solution with
 //O
 //(
-//n
-//)O(n) runtime complexity and use only O(1)
+//n)O(n) runtime complexity and use only O(1)
 //O(1) extra space.
 
 package array;

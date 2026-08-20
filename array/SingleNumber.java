@@ -35,7 +35,7 @@ public class SingleNumber {
     public static void main(String[] args) {
     int[] nums = {1,2,3,4,5};
     SingleNumber singleNumber = new SingleNumber();
-    System.out.println("Using Brute Force Approach :" +singleNumber.singleNumber1(nums));
+    System.out.println("Using Brute Force Approach : " +singleNumber.singleNumber1(nums));
     System.out.println(singleNumber.singleNumber1(nums));
 
     }

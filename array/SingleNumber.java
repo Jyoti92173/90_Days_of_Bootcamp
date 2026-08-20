@@ -36,7 +36,7 @@ public class SingleNumber {
     int[] nums = {1,2,3,4,5};
     SingleNumber singleNumber = new SingleNumber();
     System.out.println("Using Brute Force Approach : " +singleNumber.singleNumber1(nums));
-    System.out.println("Using Bit Manipulation Approach: " +singleNumber.singleNumber1(nums));
+    System.out.println("Using Bit Manipulation Approach : " +singleNumber.singleNumber1(nums));
 
     }
 }

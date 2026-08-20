@@ -2,10 +2,7 @@
 //
 //Return the integer that appears only once.
 //
-//You must implement a solution with
-//O
-//(
-//n)O(n) runtime complexity and use only O(1)
+//You must implement a solution with O(n) runtime complexity and use only O(1)
 //O(1) extra space.
 
 package array;

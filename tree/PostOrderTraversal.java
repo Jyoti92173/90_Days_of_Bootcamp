@@ -1,3 +1,9 @@
+// You are given the root of a binary tree, return the postorder traversal of its nodes' values.
+//Input: root = [1,2,3,4,5,6,7]
+
+       // Output: [4,5,2,6,7,3,1]
+
+
 package tree;
 
 

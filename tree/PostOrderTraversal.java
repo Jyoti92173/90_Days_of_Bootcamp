@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PostOrderTraversal {
-    // Depth First Search Approach.....
+    // Depth First Search Approach......
     private List<Integer> res;
 
     public List<Integer> postorderTraversal(TreeNode root) {

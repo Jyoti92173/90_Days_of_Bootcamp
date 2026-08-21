@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PostOrderTraversal {
-    // Depth First Search Approach........
+    // Depth First Search Approach.........
     private List<Integer> res;
 
     public List<Integer> postorderTraversal(TreeNode root) {
@@ -22,6 +22,7 @@ public class PostOrderTraversal {
         postorder(node.right);
         res.add(node.val);
     }
+
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);

@@ -32,7 +32,7 @@ public class PostOrderTraversal {
         root.left.right = new TreeNode(5);
         root.right.left = new TreeNode(6);
         root.right.right = new TreeNode(7);
-        System.out.println("Using Depth First Search Approach:"+new PostOrderTraversal().postorderTraversal(root));
+        System.out.println("Using Depth First Search Approach :"+new PostOrderTraversal().postorderTraversal(root));
 
 
     }

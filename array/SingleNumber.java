@@ -4,6 +4,7 @@
 
 
 package array;
+
 public class SingleNumber {
     // Brute Force Approach..............
     public int singleNumber(int[] nums) {

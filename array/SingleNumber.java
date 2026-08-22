@@ -21,6 +21,7 @@ public class SingleNumber {
         }
         return -1;
     }
+
     
     // Bit Manipulation Approach................
     public int singleNumber1(int[] nums) {

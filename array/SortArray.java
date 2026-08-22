@@ -23,7 +23,7 @@ public class SortArray {
         return nums;
     }
 
-    // Two-Pointer Approach............
+    // Two-Pointer Approach.............
     public static int[] sortArray2(int[] nums) {
         mergeSort(nums, 0, nums.length - 1);
         return nums;

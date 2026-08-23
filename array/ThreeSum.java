@@ -22,12 +22,11 @@ public class ThreeSum {
         }
         return new ArrayList<>(res);
     }
-    
+
     // Two-Pointer Approach................
     public List<List<Integer>> threeSum1(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         if (nums.length < 3) return res;
-
         Arrays.sort(nums);// Sort array
 
         for (int i = 0; i < nums.length - 2; i++) {

@@ -23,7 +23,7 @@ public class ThreeSum {
         return new ArrayList<>(res);
     }
 
-    // Two-Pointer Approach.......
+    // Two-Pointer Approach........
     public List<List<Integer>> threeSum1(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         if (nums.length < 3) return res;

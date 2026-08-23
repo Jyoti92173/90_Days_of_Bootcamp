@@ -39,13 +39,13 @@ public class TwoSum {
         return ans;
 
     }
-    
+
      static void main(String[] args) {
         int[] nums = {2, 7, 11, 15};
         int target = 17;
         TwoSum ts = new TwoSum();
         System.out.println(Arrays.toString(ts.twoSum(nums, target)));
-         System.out.println(Arrays.toString(ts.twoSum2(nums, target)));
+        System.out.println(Arrays.toString(ts.twoSum2(nums, target)));
 
     }
 

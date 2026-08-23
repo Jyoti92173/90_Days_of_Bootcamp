@@ -38,7 +38,6 @@ public class TwoSum {
             map.put(nums[i],i);
         }
         return ans;
-
     }
 
      static void main(String[] args) {

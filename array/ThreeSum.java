@@ -59,7 +59,7 @@ public class ThreeSum {
         int[] nums = {-1, 0, 1, 2, -1, -4};
         List<List<Integer>> ans = threeSum(nums);
 
-        System.out.println(ans);
+        System.out.println("Brute Force Approach:"+ans);
 
 
     }

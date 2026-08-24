@@ -18,7 +18,6 @@ public class ValidParenthesis {
             s = s.replace("{}", "");
             s = s.replace("[]", "");
         }
-
         return s.isEmpty();
     }
 

@@ -10,7 +10,7 @@ package stack;
 import java.util.Stack;
 
 public class ValidParenthesis {
-    // Brute Force Approach.........
+    // Brute Force Approach..........
     public boolean isValid(String s) {
         while (s.contains("()") || s.contains("{}") || s.contains("[]")) {
 

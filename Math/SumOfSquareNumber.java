@@ -34,7 +34,6 @@ public class SumOfSquareNumber {
 
         int c = 5;
         SumOfSquareNumber s = new SumOfSquareNumber();
-
         System.out.println("Brute Force Approach : "+ s.judgeSquareSum(c));
 
         int c1 = 3;

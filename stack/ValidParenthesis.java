@@ -21,6 +21,7 @@ public class ValidParenthesis {
         }
         return s.isEmpty();
     }
+    
     public boolean isValid1(String s) {
         Stack<Character> stack = new Stack<>();
         for(char c : s.toCharArray())

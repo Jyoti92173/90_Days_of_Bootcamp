@@ -1,4 +1,4 @@
-// Problem Statement : Given a non-negative integer c, decide whether there are two integers a and b such that a2 + b2 = c.
+// Problem Statement : Given a non-negative integer c,decide whether there are two integers a and b such that a2 + b2 = c.
 
 package Math;
 
@@ -30,7 +30,7 @@ public class SumOfSquareNumber {
         }
         return false;
     }
-    
+
     public static void main(String[] args) {
         int c = 5;
         SumOfSquareNumber s = new SumOfSquareNumber();

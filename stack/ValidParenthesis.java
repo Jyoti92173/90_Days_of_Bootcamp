@@ -48,7 +48,6 @@ public class ValidParenthesis {
     public static void main(String[] args) {
         String s = "([{}])";
         System.out.println("Using Brute Force Approach : " + new ValidParenthesis().isValid(s));
-
-
+        
     }
 }

@@ -21,7 +21,7 @@ public class ValidParenthesis {
         }
         return s.isEmpty();
     }
-    
+
     public boolean isValid1(String s) {
         Stack<Character> stack = new Stack<>();
         for(char c : s.toCharArray())
@@ -45,7 +45,6 @@ public class ValidParenthesis {
         }
         return stack.isEmpty();
     }
-    
     public static void main(String[] args) {
         String s = "([{}])";
         System.out.println("Using Brute Force Approach : " + new ValidParenthesis().isValid(s));

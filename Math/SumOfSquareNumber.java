@@ -30,6 +30,7 @@ public class SumOfSquareNumber {
         }
         return false;
     }
+    
     public static void main(String[] args) {
         int c = 5;
         SumOfSquareNumber s = new SumOfSquareNumber();

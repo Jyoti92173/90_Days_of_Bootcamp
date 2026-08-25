@@ -10,6 +10,7 @@ package stack;
 import java.util.Stack;
 
 public class ValidParenthesis {
+    
     // Brute Force Approach............
     public boolean isValid(String s) {
         while (s.contains("()") || s.contains("{}") || s.contains("[]")) {
@@ -20,7 +21,7 @@ public class ValidParenthesis {
         }
         return s.isEmpty();
     }
-    
+
     public boolean isValid1(String s) {
         Stack<Character> stack = new Stack<>();
         for(char c : s.toCharArray())

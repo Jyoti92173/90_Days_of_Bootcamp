@@ -2,6 +2,7 @@ package linkedList;
 
 public class MergeTwoList {
     public  ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        
         ListNode dummy = new ListNode(0);
         ListNode node = dummy;
 

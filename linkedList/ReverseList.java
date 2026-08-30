@@ -21,7 +21,6 @@ public class ReverseList {
         }
         return prev;
     }
-
     // Recursion Approach.......
     public ListNode reverseList2(ListNode head) {
         if (head == null || head.next == null) {

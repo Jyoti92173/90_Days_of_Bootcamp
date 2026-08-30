@@ -28,10 +28,6 @@ public class ReverseList {
             return null;
         }
         ListNode newHead = head;
-        if (head.next == null) {
-            newHead = reverseList(head.next);
-            head.next.next = head;
-        }
         head.next = null;
         return newHead;
     }

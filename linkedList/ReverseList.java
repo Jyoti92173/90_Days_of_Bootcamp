@@ -1,16 +1,6 @@
 // Problem Statement : Given the beginning of a singly linked list head, reverse the list, and return the new beginning of the list.
 
-
 package linkedList;
- class ListNode {
-
-    int val;
-    ListNode next;
-
-    ListNode(int val) {
-        this.val = val;
-    }
-}
 
 public class ReverseList {
 // Iterative Approach with Three Pointer technique.....

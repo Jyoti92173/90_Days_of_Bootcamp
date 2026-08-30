@@ -28,7 +28,7 @@ public class ReverseList {
         if (head == null || head.next == null) {
             return null;
         }
-        
+
         ListNode newHead = head;
         if (head.next == null) {
             newHead = reverseList(head.next);

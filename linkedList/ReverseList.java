@@ -40,7 +40,7 @@ public class ReverseList {
     }
 
     public static void main(String[] args) {
-        
+
         // Create linked list: 1 -> 2 -> 3 -> 4 -> 5
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
@@ -74,7 +74,6 @@ public class ReverseList {
     }
 
     public static void printList(ListNode head) {
-
         while (head != null) {
             System.out.print(head.val + " -> ");
             head = head.next;

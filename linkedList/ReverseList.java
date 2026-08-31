@@ -20,6 +20,7 @@ public class ReverseList {
             prev = curr;
             curr = temp;
         }
+        
         return prev;
     }
 

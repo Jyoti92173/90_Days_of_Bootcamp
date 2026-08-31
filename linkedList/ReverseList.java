@@ -4,7 +4,7 @@ package linkedList;
 
 public class ReverseList {
 
-// Iterative Approach with Three Pointer technique......
+// Iterative Approach with Three Pointer technique.......
     public ListNode reverseList(ListNode head) {
 
         if (head == null || head.next == null) {

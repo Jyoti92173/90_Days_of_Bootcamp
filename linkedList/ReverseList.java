@@ -32,7 +32,7 @@ public class ReverseList {
 
         ListNode newHead = head;
         if (head.next == null) {
-            newHead =reverseList(head.next);
+            newHead = reverseList(head.next);
             head.next.next = head;
         }
         head.next = null;

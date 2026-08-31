@@ -58,7 +58,7 @@ public class MergeTwoList {
             System.out.print(head.val + " -> ");
             head = head.next;
         }
-        
+
         System.out.println("null");
     }
 }

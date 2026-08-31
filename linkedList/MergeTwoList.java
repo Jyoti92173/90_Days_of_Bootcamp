@@ -51,7 +51,7 @@ public class MergeTwoList {
         printList(merged);
 
     }
-    
+
     public static void printList(ListNode head) {
 
         while (head != null) {

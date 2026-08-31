@@ -22,6 +22,7 @@ public class MergeTwoList {
         } else {
             node.next = list2;
         }
+        
         return dummy.next;
     }
 

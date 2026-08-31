@@ -29,7 +29,7 @@ public class ReverseList {
         if (head == null || head.next == null) {
             return null;
         }
-        
+
         ListNode newHead = head;
         if (head.next == null) {
             newHead = reverseList(head.next);
@@ -40,6 +40,7 @@ public class ReverseList {
     }
 
     public static void main(String[] args) {
+        
         // Create linked list: 1 -> 2 -> 3 -> 4 -> 5
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);

@@ -4,7 +4,7 @@
 
 package binarySearch;
 
-public class BinarySearch {
+public class BinarySearch{
     public int search(int[] nums, int target) {
         int i = 0;
         while(i<nums.length){

@@ -9,7 +9,7 @@ import java.util.Stack;
 
 public class InOrderTraversal {
 
-    // Using Recursion Approach.........
+    // Using Recursion Approach..........
     private List<Integer> res;
     public List<Integer> inorderTraversal(TreeNode root) {
         res = new ArrayList<>();

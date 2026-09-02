@@ -3,7 +3,7 @@
 package Math;
 
 public class SumOfSquareNumber {
-    // I used Brute Force Approach (if c is small number)............
+    // I used Brute Force Approach (if c is small number).............
     public boolean judgeSquareSum(int c) {
         for(long a = 0; a*a <= c; a++){
             for(long b = 0; b*b <= c; b++){

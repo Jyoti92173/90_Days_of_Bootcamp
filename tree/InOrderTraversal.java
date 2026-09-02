@@ -29,6 +29,7 @@ public class InOrderTraversal {
 
     // Depth First Search Approach.......
     public List<Integer> inorderTraversal1(TreeNode root) {
+        
         List<Integer> res = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
         TreeNode cur = root;
